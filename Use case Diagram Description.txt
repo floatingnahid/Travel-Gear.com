@@ -1,0 +1,14 @@
+
+Main:
+Top level use cases are View Items, Make Purchase and Client Register. View Items use case could be used by customer as top level use case if customer only wants to find and see some products. This use case could also be used as a part of Make Purchase use case. Client Register use case allows customer to register on the web site, for example to get some coupons or be invited to private sales. Note, that Checkout use case is included use case not available by itself - checkout is part of making purchase.
+
+View Items:
+View Items use case is extended by several optional use cases - customer may search for items, view items recommended for customers, add items to shopping cart or wish list. All these use cases are extending use cases because they provide some optional functions allowing customer to find item.
+Customer Authentication use case is included in View Recommended Items and Add to Wish List because both require the customer to be authenticated. At the same time, item could be added to the shopping cart without user authentication.
+
+Checkout:
+Checkout use case includes several required uses cases. Customer should be authenticated. It could be done through user login page. Web site authentication service is used in all these use cases. Checkout use case also includes Payment use case which could be done by Bkash, Rocket or Nagad.
+
+Include: An include relationship is a relationship in which one use case (the base use case) includes the functionality of another use case.
+
+Extend: Extend is a directed relationship that specifies how and when the behavior defined in usually supplementary (optional) extending use case can be inserted into the behavior defined in the extended use case.

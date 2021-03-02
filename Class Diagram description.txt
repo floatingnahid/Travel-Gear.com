@@ -1,0 +1,16 @@
+Main Diagram:
+The purpose of the diagram is to introduce some common terms, "dictionary" for TravelGear.com - Registered user, New User, Account, Shopping Cart, Product, Order, Payment, etc. and relationships between. It could be used as a common ground between business analysts and software developers.
+
+Each User has unique id and is linked to exactly one account. Account owns shopping cart and orders. User could register as a Registered User and also a new user who don't open any account he/she can also view items but if he/she want to buy then they have be a Registered User means need a account. A Registered User can find their travelling route, it will be very beneficial for them because by this service they will know their best travelling route and also one Registered User can find different route and write blog on their experience. Shopping cart belongs to account.
+
+Account owns Registered User orders. Registered User may have no orders. Registered User orders are sorted and unique. Each order could refer to several payments, possibly none. Every payment has unique id and is related to exactly one account. Each order has current order status. Both order and shopping cart have line items linked to a specific product. Each line item is related to exactly one product. A product could be associated to many line items or no item at all.
+
+
+
+Enumeration: An enumeration is a complete list of all values that a given type may acquire. An enumeration is used as a type of attributes, operations, and operation parameters.
+
+Association: If two classes in a model need to communicate with each other, there must be a link between them, and that can be represented by an association
+
+Composition: A composition in the Unified Modeling Language (UML) is a special case of association that describes a relationship between a whole and its existential parts. Put simply, in a composition, a part can never be larger than the whole.
+An example: A building consists of rooms. The building is the whole, the rooms are parts of the whole. Since it is a concrete building, its multiplicity is 1. The multiplicity of the rooms can go from 1..*, so there is at least one room (without space no building), but there can be (at least in theory) infinitely many rooms.
+
